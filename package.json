@@ -4,6 +4,11 @@
   "description": "my first next.js project",
   "main": "index.js",
   "private": true,
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/dacicus75/next-project.git"
+  },
+  
   
   "scripts": {
     "dev": "next dev",
