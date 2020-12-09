@@ -1,6 +1,13 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 function Home() {
+    const router = useRouter ()
+
+    const handleClick = (e) => {
+        e.preventDefault ()
+        router.push('/about')
+    }
     return (
         <> 
           <Head>
@@ -8,6 +15,9 @@ function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
     </Head>
     <div>Welcome, You</div>
+    <button onClick={handleClick}>
+      Click me!  
+    </button>
     </>
     )
 }
